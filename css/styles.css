@@ -371,7 +371,6 @@ nav h1 a {
     width: 60%;
     float: left;
     margin-right: 1rem;
-    border-bottom: 0 solid #d9d9d9;
   }
   #reviews-container {
     clear: both;
@@ -387,5 +386,16 @@ nav h1 a {
   #reviews-list li{
     width: calc(33.3333% - 2rem);
     margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #breadcrumb {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  #maincontent {
+    width: 1024px;
+    margin: 0 auto;
   }
 }
