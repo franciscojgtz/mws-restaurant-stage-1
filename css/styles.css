@@ -363,7 +363,7 @@ nav h1 a {
   }
 } 
 
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 680px) {
   #restaurant-container {
     border-bottom: none;
   }
