@@ -13,6 +13,7 @@
 <body class="inside">
   <!-- Beginning header -->
   <header>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <!-- Beginning nav -->
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
@@ -27,7 +28,7 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main id="maincontent">
+  <main id="maincontent" tabindex="-1">
     <!-- Beginning map -->
     <section id="map-container">
       <div id="map"></div>
@@ -36,7 +37,7 @@
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
       <h1 id="restaurant-name"></h1>
-      <img id="restaurant-img">
+      <img id="restaurant-img" alt="Restaurant">
       <p id="restaurant-cuisine"></p>
       <p id="restaurant-address"></p>
       <table id="restaurant-hours"></table>
