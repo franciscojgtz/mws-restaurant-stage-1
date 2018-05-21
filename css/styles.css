@@ -385,16 +385,20 @@ nav h1 a {
   }
 
   #restaurants-list li {
-    margin: 1rem;
+    //margin: 1rem;
+  }
+
+  #restaurants-list li {
+    width: calc(50% - .5rem);
+  }
+
+  #restaurants-list li:nth-child(odd) {
+    margin-right: 1rem;
+
   }
 }
 
-@media screen and (min-width: 560px) {
-  .filter-options select {
-    margin: 2rem;
-    width: calc(50% - 4rem);
-  }
-
+@media screen and (min-width: 460px) {
   #restaurants-list li {
     width: calc(50% - 2rem);
     margin: 1rem;
@@ -402,6 +406,13 @@ nav h1 a {
 
   #restaurants-list li:nth-child(odd) {
     margin: 1rem 1rem 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .filter-options select {
+    margin: 2rem;
+    width: calc(50% - 4rem);
   }
 
   #reviews-list li{
@@ -447,7 +458,7 @@ nav h1 a {
     width: 1024px;
     margin: 0 auto;
   }
-  
+
   #maincontent {
     width: 1024px;
     margin: 0 auto;
