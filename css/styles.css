@@ -10,6 +10,13 @@ html {
   box-sizing: inherit;
 }
 
+img, ]
+embed, 
+object, 
+video {
+  max-width: 100%;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fdfdfd;
@@ -45,7 +52,18 @@ h6 {
   margin: 0 0 2rem;
 }
 
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, 
+aside, 
+canvas, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+section {
   display: block;
 }
 
@@ -359,6 +377,27 @@ nav h1 a {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 440px) {
+  table, 
+  thead, 
+  tbody, 
+  th, 
+  td, 
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td:first-of-type {
+    font-weight: bold;
+  }
+}
+
 @media screen and (min-width: 440px) {
   html {
     font-size: 65%;
@@ -426,19 +465,9 @@ nav h1 a {
 } 
 
 @media screen and (min-width: 680px) {
-  #restaurant-container {
-    border-bottom: none;
-  }
+  
 
-  #restaurant-img {
-    width: 60%;
-    float: left;
-    margin-right: 1rem;
-  }
 
-  #reviews-container {
-    clear: both;
-  }
 }
 
 @media screen and (min-width: 800px) { 
@@ -450,6 +479,40 @@ nav h1 a {
   #reviews-list li{
     width: calc(33.3333% - 2rem);
     margin: 1rem;
+  }
+
+  #restaurant-container {
+    border-bottom: none;
+  }
+
+  #restaurant-img {
+    width: 60%;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  #reviews-container {
+    clear: both;
+  }
+
+  table, 
+  thead, 
+  tbody, 
+  th, 
+  td, 
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td:first-of-type {
+    font-weight: bold;
   }
 }
 
