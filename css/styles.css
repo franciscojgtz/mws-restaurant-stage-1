@@ -171,7 +171,7 @@ nav h1 a {
   color: #fff;
 }
 .filter-options select {
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
   font-size: 1.5rem;
@@ -449,6 +449,18 @@ nav h1 a {
   td:first-of-type {
     font-weight: bold;
   }
+}
+
+.sw-button {
+  background-color: #007dbb;
+  color: #fff;
+  padding: 0.8rem 3rem 1rem;
+  z-index: 100;
+  border-bottom-right-radius: 0.8rem;
+  font-size: 1.6rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 @media screen and (min-width: 440px) {
