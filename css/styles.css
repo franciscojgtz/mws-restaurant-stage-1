@@ -157,6 +157,7 @@ nav h1 a {
   background-color: #007dbb;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .filter-options h2 {
@@ -226,8 +227,6 @@ nav h1 a {
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
-  min-width: 100%;
 }
 
 #restaurants-list li h3 {
@@ -286,6 +285,10 @@ nav h1 a {
   width: 100%;
 }
 
+.inside #restaurant-container {
+  padding: 1rem;
+}
+
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
@@ -324,10 +327,10 @@ nav h1 a {
 #reviews-container {
   border-bottom: 0.1rem solid #d9d9d9;
   border-top: 0.1rem solid #fff;
-  padding: 1rem;
   width: 100%;
 }
 
+#restaurant-container, 
 #reviews-container {
   padding: 2rem 0 0 0;
 }
@@ -451,6 +454,27 @@ nav h1 a {
   }
 }
 
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  table, 
+  thead, 
+  tbody, 
+  th, 
+  td, 
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td:first-of-type {
+    font-weight: bold;
+  }
+}
+
 .sw-button {
   background-color: #007dbb;
   color: #fff;
@@ -472,7 +496,7 @@ nav h1 a {
     font-size: 1.3rem;
   }
 
-  #restaurant-container {
+  .inside #restaurant-container {
     padding: 2rem;
   }
 
@@ -489,9 +513,9 @@ nav h1 a {
   }
 
   #restaurants-list li {
-    //margin: 1rem;
+    margin: 1rem;
   }
-
+/*
   #restaurants-list li {
     width: calc(50% - .5rem);
   }
@@ -499,18 +523,18 @@ nav h1 a {
   #restaurants-list li:nth-child(odd) {
     margin-right: 1rem;
 
-  }
+  }*/
 }
 
 @media screen and (min-width: 460px) {
-  #restaurants-list li {
+  /*#restaurants-list li {
     width: calc(50% - 2rem);
     margin: 1rem;
   }
 
   #restaurants-list li:nth-child(odd) {
     margin: 1rem 1rem 1rem 1rem;
-  }
+  }*/
 }
 
 @media screen and (min-width: 560px) {
@@ -527,6 +551,15 @@ nav h1 a {
   #reviews-list li:nth-child(odd) {
     margin: 1rem;
   }
+
+  #restaurants-list li{
+    width: calc(50% - 2rem);
+    margin: 1rem;
+  }
+
+  #restaurants-list li:nth-child(odd) {
+    margin: 1rem;
+  }
 } 
 
 @media screen and (min-width: 680px) {
@@ -536,17 +569,7 @@ nav h1 a {
 }
 
 @media screen and (min-width: 800px) { 
-  #restaurants-list li {
-    width: calc(33.3333% - 2rem);
-    margin: 1rem;
-  }
-
-  #reviews-list li{
-    width: calc(33.3333% - 2rem);
-    margin: 1rem;
-  }
-
-  #restaurant-container {
+  .inside #restaurant-container {
     border-bottom: none;
   }
 
@@ -560,35 +583,42 @@ nav h1 a {
   #reviews-container {
     clear: both;
   }
-
-  table, 
-  thead, 
-  tbody, 
-  th, 
-  td, 
-  tr {
-    display: block;
-  }
-
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  td:first-of-type {
-    font-weight: bold;
-  }
 }
 
 @media screen and (min-width: 1024px) {
+  .filter-options h2 {
+    text-align: center;
+  }
+
+  .filter-options h2, .filter-options select {
+    width: calc(33.3333% - 4rem);
+    margin: 2rem;
+  }
+
+  #restaurants-list li {
+    width: calc(33.3333% - 2rem);
+    margin: 1rem;
+  }
+
+  #reviews-list li{
+    width: calc(33.3333% - 2rem);
+    margin: 1rem;
+  }
+
+  #restaurant-img {
+    width: 50%;
+  }
+
+}
+
+@media screen and (min-width: 1600px) {
   #breadcrumb {
-    width: 1024px;
+    width: 1600px;
     margin: 0 auto;
   }
 
   #maincontent {
-    width: 1024px;
+    width: 1600px;
     margin: 0 auto;
   }
 }
