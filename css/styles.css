@@ -87,6 +87,10 @@ footer {
   width: 100%;
 }
 
+footer a {
+  color: #fff;
+}
+
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
