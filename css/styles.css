@@ -148,6 +148,10 @@ nav h1 a {
   text-decoration: underline;
 }
 
+.container {
+  width: 100%;
+}
+
 /* ====================== Map ====================== */
 .map {
   height: 400px;
@@ -194,6 +198,10 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Listing ====================== */
+.restaurant-container {
+  width: 100%;
+}
+
 .restaurants-list {
   background-color: #f3f3f3;
   list-style: outside none none;
@@ -291,6 +299,7 @@ nav h1 a {
 
 .inside .restaurant-container {
   padding: 1rem;
+  width: 100%;
 }
 
 .restaurant-name {
